@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.gupaoedu.book</groupId>
-  <artifactId>redis-spring-boot-starter</artifactId>
+  <artifactId>wyn-spring-boot-starter</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>redis-spring-boot-starter</name>
+  <name>wyn-spring-boot-starter</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -26,15 +26,16 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.redisson</groupId>
-      <artifactId>redisson</artifactId>
-      <version>3.11.1</version>
-    </dependency>
-    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter</artifactId>
       <version>2.2.2.RELEASE</version>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.16</version>
+      <scope>compile</scope>
     </dependency>
   </dependencies>
 
