@@ -9,4 +9,6 @@
     <!-- 生成远程服务代理，可以和本地bean一样使用userService -->
     <dubbo:reference id="userService" interface="com.gupaoedu.book.dubbo.IUserService"
                      url="dubbo://192.168.88.10:20880/com.gupaoedu.book.dubbo.IUserService"/>
+    <dubbo:reference id="helloService" interface="com.gupaoedu.book.springcloud.IHelloService"
+                     url="dubbo://192.168.88.10:20880/com.gupaoedu.book.springcloud.IHelloService"/>
 </beans>

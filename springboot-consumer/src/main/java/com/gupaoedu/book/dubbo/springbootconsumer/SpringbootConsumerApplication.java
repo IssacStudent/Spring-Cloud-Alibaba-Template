@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class SpringbootConsumerApplication {
-    @Reference(url = "dubbo://192.168.13.1:20880/com.gupaoedu.book.dubbo.IHelloService")
+    @Reference(url = "dubbo://192.168.88.10:20880/com.gupaoedu.book.springcloud.IHelloService")
     private IHelloService helloService;
 
     public static void main(String[] args) {

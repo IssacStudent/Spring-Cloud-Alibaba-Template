@@ -14,7 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @Reference(mock = "com.gupaoedu.book.springcloud.springclouddubboconsumer.MockHelloService",
+    @Reference(url = "dubbo://192.168.88.10:20880/com.gupaoedu.book.springcloud.IHelloService",
+            mock = "com.gupaoedu.book.springcloud.springclouddubboconsumer.MockHelloService",
             cluster = "failfast")
     private IHelloService iHelloService;
 
