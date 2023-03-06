@@ -19,7 +19,7 @@ public class DubboMain {
         context.start();
         Compiler compiler=ExtensionLoader.getExtensionLoader(Compiler.class).getAdaptiveExtension();
         System.out.println(compiler.getClass());
-        System.in.read(); //阻塞Main线程
-       Main.main(args);
+        //System.in.read(); //阻塞Main线程
+        Main.main(args);
     }
 }
