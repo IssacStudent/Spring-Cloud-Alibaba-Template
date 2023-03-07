@@ -16,7 +16,7 @@ public class HelloController {
 
     @Reference(url = "dubbo://192.168.88.10:20880/com.gupaoedu.book.springcloud.IHelloService",
             mock = "com.gupaoedu.book.springcloud.springclouddubboconsumer.MockHelloService",
-            cluster = "failfast")
+            cluster = "failfast", timeout = 1000, retries = 0)
     private IHelloService iHelloService;
 
     @GetMapping("/say")

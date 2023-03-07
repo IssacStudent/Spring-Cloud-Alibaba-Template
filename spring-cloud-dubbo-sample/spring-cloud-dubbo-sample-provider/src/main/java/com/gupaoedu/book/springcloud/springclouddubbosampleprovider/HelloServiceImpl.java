@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Value;
  * 风骚的Mic 老师
  * create-date: 2020/1/7-14:00
  */
-@Service
+@Service(timeout = 1000, retries = 0, cluster = "failfast")
 public class HelloServiceImpl implements IHelloService {
     @Value("${dubbo.application.name}")
     private String serviceName;
